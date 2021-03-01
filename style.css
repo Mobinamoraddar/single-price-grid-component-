@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 150%;
+}
+
+.container {
+  box-shadow: 5px 5px 15px rgba(110, 110, 110, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__one {
+  background-color: #fff;
+  padding: 30px;
+}
+.content__title {
+  font-size: 12px;
+  color: hsl(179, 62%, 43%);
+  margin: 12px 0;
+}
+.content__slogan {
+  font-weight: 700;
+  font-size: 15px;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 8px;
+}
+.content__description {
+  font-size: 13px;
+  color: hsl(218, 22%, 67%);
+  margin-bottom: 10px;
+}
+.container_small {
+  display: flex;
+}
+
+.content__two {
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(179, 62%, 43%);
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.subscribe__price {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.subscribe__price p {
+  display: flex;
+}
+.price {
+  font-size: 12px;
+  color: hsl(179, 62%, 60%);
+  margin-left: 10px;
+}
+.subscribe__description {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.subscribe__signup {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: hsl(71, 73%, 54%);
+  padding: 10px 60px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 5px 5px 10px rgba(110, 110, 110, 0.3);
+  align-self: center;
+}
+.subscribe__signup:hover {
+  transform: scale(1.1);
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.content__three {
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(179, 62%, 48%);
+  flex: 1;
+  padding: 30px;
+}
+.subscribe__title,
+.about__title {
+  margin-bottom: 13px;
+  font-size: 7px;
+}
+.about__options {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+@media only screen and (max-width: 375px) {
+  .container_small {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    max-width: 280px;
+    margin: 60px 0;
+  }
+  .content__title {
+    font-size: 10px;
+  }
+  .content__slogan {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .subscribe__signup {
+    padding: 10px 85px;
+  }
+}
